@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema de Investigação</title>
+</head>
+
+<body>
+    <header>
+        <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="45" fill="#1a3c6e" stroke="#000" stroke-width="2" />
+            <text x="50" y="58" font-size="28" fill="#fff" text-anchor="middle" font-family="Arial">SIP</text>
+        </svg>
+
+        <h1>Sistema de Investigação Policial</h1>
+        <p class="legal">Bem-vindo ao sistema.</p>
+    </header>
+
+    <main>
+        <article>
+            <h2>Caso 001</h2>
+            <p>Status: Em andamento</p>
+            <p>Investigador: Carlos Silva</p>
+            <p>Local: Centro da cidade</p>
+
+            <section>
+                <h3>Foto do local</h3>
+                <label for="foto-local">Selecionar imagem:</label>
+                <input type="file" id="foto-local" name="foto-local" accept="image/*">
+            </section>
+
+            <section>
+                <h3>Suspeitos</h3>
+                <ul class="suspeitos">
+                    <li>João Santos</li>
+                    <li>Marcos Oliveira</li>
+                    <li>Pedro Costa</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Evidências</h3>
+                <ul>
+                    <li>Fotografia</li>
+                    <li>Depoimento de testemunha</li>
+                    <li>Objeto encontrado no local</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Vídeo do depoimento</h3>
+                <video controls width="400">
+                    <source src="depoimento.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeo.
+                </video>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>Sistema de Investigação Policial - Projeto acadêmico</p>
+    </footer>
+</body>
+
+</html>
